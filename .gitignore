@@ -1,0 +1,28 @@
+# Data (raw + processed)
+data/images/
+data/labels/
+downloads/
+C:/raw_coin_images/
+
+# Model weights and results
+models/
+results/
+
+# Python build and cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.pkl
+
+# Virtual environment (if inside project)
+.env/
+.venv/
+env/
+venv/
+
+# Jupyter checkpts (if you ever add notebooks)
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
