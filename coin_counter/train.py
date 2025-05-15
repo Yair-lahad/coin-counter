@@ -8,5 +8,6 @@ model.train(
     imgsz=640,
     batch=4,
     name="v1",
-    project="models/coin_detector"  # this controls the full save path
+    project="models/coin_detector",  # this controls the full save path,
+    augment=True
 )
