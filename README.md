@@ -7,7 +7,7 @@ A computer vision system that detects and counts Israeli coins in an image, calc
 This project implements an object detection system that:
 1. Identifies Israeli coins (₪1, ₪2, ₪5, ₪10) in images
 2. Calculates the total monetary value of all detected coins
-3. Measures accuracy based on the normalized absolute difference between predicted and actual amounts
+3. return CSV of results
 
 ## Dataset
 
@@ -27,10 +27,22 @@ The system is trained on a custom dataset of Israeli coins:
 
 ## Model Architecture
 
-The project uses YOLOv8, a state-of-the-art object detection model:
+The project uses Ultralytics with YOLOv8, a state-of-the-art object detection model:
 - Base model: YOLOv8n (nano variant)
 - Transfer learning with freeze layers
 - Custom training with data augmentation
+
+### Data Preparation and Notes
+
+- You must include model file "best.pt" at location: models/shared/best.pt in order to run the model successfuly.
+- You must include coin.yaml (included in git)
+
+Prepare your data for training:
+add images to data/images/train + data/images/val
+add YOLO labels to data/labels/train + data/labels/val
+add unlabeled images for prediction to data/unlabeled
+
+read more at: https://docs.ultralytics.com/datasets/detect/#ultralytics-yolo-format
 
 ## Project Structure
 
@@ -83,14 +95,9 @@ pip install -r requirements.txt
 ```
 
 ## Usage
+See Data Preparation and Notes section prior to usage run.
 
-### Data Preparation
-
-Prepare your data for training:
-add images to data/images/train + data/images/val
-add YOLO labels to data/labels/train + data/labels/val
-add unlabeled images for prediction to data/unlabeled
-
+### prepare images and label files
 ```bash
 python scripts/prepare_data.py
 ```
