@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 from pathlib import Path
 
-model = YOLO("models/coin_detector/v1/weights/best.pt")
+model = YOLO("models/shared/best.pt")
 # Resolve path relative to this script
 image_folder = Path(__file__).resolve().parents[1] / "data/unlabeled"
 

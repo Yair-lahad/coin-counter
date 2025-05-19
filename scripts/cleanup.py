@@ -2,9 +2,12 @@ import shutil
 import os
 from pathlib import Path
 
+# This script is used to clean up the output directories and cache files
+# after running the YOLOv8 model for coin detection.   
+
 # Define paths to clean
-model_dir = Path("models/coin_detector/v1")
-predict_dir = Path("results/model_labels/v1")
+model_dir = Path("models/coin_detector")
+predict_dir = Path("results/model_labels")
 train_cache = Path("data/labels/train.cache")
 val_cache = Path("data/labels/val.cache")
 

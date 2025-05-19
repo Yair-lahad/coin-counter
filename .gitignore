@@ -1,13 +1,20 @@
 # Data (raw + processed)
-data/images/
-data/labels/
-data/unlabeled/
-downloads/
-C:/raw_coin_images/
+data/images/train
+data/images/train_pre
+data/images/val
+data/images/val_pre
+
+data/labels/train
+data/labels/train_pre    
+data/labels/val
+data/labels/val_pre
+**/WhatsApp*
+*.csv
 
 # Model weights and results
-models/
-results/
+models/coin_detector/
+results/model_labels
+yolov8n.pt
 
 # Python build and cache
 __pycache__/
@@ -27,3 +34,4 @@ venv/
 # System files
 .DS_Store
 Thumbs.db
+*.cache
