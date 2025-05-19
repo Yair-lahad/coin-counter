@@ -2,6 +2,9 @@
 
 A computer vision system that detects and counts Israeli coins in an image, calculating the total monetary value.
 
+![image](https://github.com/user-attachments/assets/295c4110-1b18-443f-8158-aaf9944002b5)
+
+
 ## Project Overview
 
 This project implements an object detection system that:
@@ -96,9 +99,6 @@ pip install -r requirements.txt
 
 ## Usage
 See Data Preparation and Notes section prior to usage run.
-
-![image](https://github.com/user-attachments/assets/295c4110-1b18-443f-8158-aaf9944002b5)
-
 
 ### prepare images and label files
 ```bash
