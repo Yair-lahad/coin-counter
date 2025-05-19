@@ -97,6 +97,9 @@ pip install -r requirements.txt
 ## Usage
 See Data Preparation and Notes section prior to usage run.
 
+![image](https://github.com/user-attachments/assets/295c4110-1b18-443f-8158-aaf9944002b5)
+
+
 ### prepare images and label files
 ```bash
 python scripts/prepare_data.py
